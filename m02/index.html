@@ -8,16 +8,19 @@
   
   <body>
     
-    <table>
+    <table border="1">
       
       <thead>
-        <tr>
-          <th></th>
-          <th colscope=“3”><h1>HTML Table</h1></th>
-          </tr>
+        
       </thead>
       
       <tbody>
+        <tr>
+          <th></th>
+          <td colspan=“3”><h1>HTML Table</h1></td>
+          <td></td>
+        </tr>
+        
         <tr>
           <th><img src="https://media.istockphoto.com/id/1174686364/vector/kitchen-interior-illustration.jpg?s=170667a&w=0&k=20&c=karER-n228-r8dpAPVDXNdEVFvTOqIYPdjrnF-jVAWw=" alt="Kitchen"></th>
           <td><h2>Meal Planner</h2></td>
@@ -31,14 +34,15 @@
         </tr>
         
         <tr>
-          <td>Day of the Week</td>
-          <td>Recipe Name</td>
+          <td><b>Day of the Week</b></td>
+          <td><b>Recipe Name</b></td>
+          <td rowspan="8">Add the name of the recipe under the comun Recipe Name</td>
         </tr>
         
         <tr>
           <td>Monday</td>
           <td>Spinach Feta Pizza</td>
-          <td rowspan="7">Add the name of the recipe under the comun Recipe Name</td>
+          
         </tr>
         <tr>
           <td>Tuesday</td>
@@ -46,19 +50,27 @@
         </tr>
         <tr>
           <td>Wednesday</td>
+          <td></td>
         </tr>
         <tr>
           <td>Thrusday</td>
+          <td></td>
         </tr>
         <tr>
           <td>Friday</td>
+          <td></td>
         </tr>
         <tr>
           <td>Saturday</td>
+          <td></td>
         </tr>
         <tr>
           <td>Sunday</td>
+          <td></td>
         </tr>
+        
+        
+        <!-- more rows like the two above here -->
       </tbody>
       
     </table>
