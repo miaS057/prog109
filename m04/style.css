@@ -33,7 +33,7 @@ li {
 #nav, #footer {
 	background-color: #70A4CD;
 	padding: 0.5em 0;
-	color: #FFFAF2;
+	
 }
 #feature, .article {
 	height: 10em;
@@ -50,3 +50,6 @@ li {
 	background-color: #FFFAF2;
 }
 
+#footer{
+	color: #FFFAF2;
+}
