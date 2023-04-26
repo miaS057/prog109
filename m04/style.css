@@ -44,3 +44,10 @@ li {
 #feature{
 	background-color: #A1C7DB;
 }
+.column1, .column3{
+	background-color: #F4CCC4;
+}
+.column2{
+	background-color: #FFFAF2;
+}
+
