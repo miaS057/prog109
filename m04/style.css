@@ -35,7 +35,6 @@ li {
 #nav, #footer {
 	background-color: #70A4CD;
 	padding: 0.5em 0;
-	color: #FFFAF2;
 	
 }
 #feature, .article {
@@ -52,6 +51,6 @@ li {
 .column2{
 	background-color: #FFFAF2;
 }
-a{
+a, .footer{
 	color: #FFFAF2;
 }
