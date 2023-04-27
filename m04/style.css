@@ -1,3 +1,7 @@
+*{
+	font-family: Arial, Verdana, sans-serif;
+	text-align: center;
+}
 h1{
 	font-family: 'GranaPadanoMedium';
 	font-weight: normal;
@@ -13,15 +17,12 @@ body{
 }
 #nav, #feature, #footer {
 	margin: 1%;
-	font-family: Arial, Verdana, sans-serif;
-	text-align: center;
 }
 .column1, .column2, .column3 {
 	width: 31.3%;
 	float: left;
 	margin: 1%;
-	font-family: Arial, Verdana, sans-serif;
-	text-align: center;
+	
 }
 .column3 {
 	margin-right: 0%;
@@ -34,6 +35,7 @@ li {
 #nav, #footer {
 	background-color: #70A4CD;
 	padding: 0.5em 0;
+	color: #FFFAF2;
 	
 }
 #feature, .article {
@@ -51,6 +53,3 @@ li {
 	background-color: #FFFAF2;
 }
 
-#footer{
-	color: #FFFAF2;
-}
