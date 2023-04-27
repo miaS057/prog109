@@ -41,10 +41,6 @@ li {
 	height: 10em;
 	margin-bottom: 1em;
 }
-
-#feature{
-	background-color: #A1C7DB;
-}
 .column1, .column3{
 	background-color: #F4CCC4;
 }
@@ -54,3 +50,10 @@ li {
 a, .footer{
 	color: #FFFAF2;
 }
+#feature {
+	background-color: #A1C7DB;
+ background-image: url("background-color: #A1C7DB;");
+ background-size:contain;
+ background-position: right;
+ background-repeat:no-repeat;}
+
