@@ -13,9 +13,6 @@ body{
 	margin: 0 auto;
 	background-image:url("water.png");
 }
-#content {
-	overflow: auto;
-}
 .content {
 	overflow: auto;
     	text-align: left;
