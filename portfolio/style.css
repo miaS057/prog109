@@ -1,7 +1,7 @@
 *{
 	font-family: Arial, Verdana, sans-serif;
 	text-align: center;
-    color: #355376;
+	color: #355376;
 }
 h1{
 	font-family: 'GranaPadanoMedium';
@@ -30,14 +30,11 @@ li {
 }
 #feature{
 	height: 20em;
-    margin-top: 1em;
+	margin-top: 1em;
 	margin-bottom: 1em;
-    padding: 0.01em
-}
-#feature {
+	padding: 0.01em
 	background-color: #FFFAF2;
-}    
-
+}
 a, .footer{
 	color: #FFFAF2;
 }
