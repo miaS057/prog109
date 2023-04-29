@@ -42,4 +42,5 @@ a, .footer{
 }
 textarea{
 	text-align: left;
+	resize: none;
 }
