@@ -10,7 +10,6 @@ height: 60px;
 background-color:white;
 float:left;
 }
-
 .black{
 border: 1px solid black;
 width: 10%;
@@ -18,11 +17,9 @@ height: 60px;
 background-color:#787878;
 float:left;
 }
-
 .clear{
 clear:both; 
 }
-
 #footer {
  border:solid 1px;
  padding: 10px;
@@ -30,7 +27,6 @@ clear:both;
  text-align:center;
  background-color:lightyellow;
 }
-
 #container {
  margin-top:12%;
  margin-left:10%;
