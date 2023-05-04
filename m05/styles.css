@@ -23,10 +23,11 @@ body {
 	margin: 0px 0px 0px 0px;}
 
 h1 {
-    font-family: 'RubikOneRegular';
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'RubikOneRegular';
+  font-weight: normal;
+  font-style: normal;
 	text-align: center;
+	color: black;
 }
 
 #teacher2 {
