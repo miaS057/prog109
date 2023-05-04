@@ -1,7 +1,7 @@
 var table = prompt('Enter a number from 1-10');             // Unit of table
-var operator = 'multiplication'; // Type of calculation
-var i = 1;                 // Set counter to 1
-var msg = '<h2>Multiplication Table</h2>';              // Message
+var operator = 'multiplication';                            // Type of calculation
+var i = 1;                                                  // Set counter to 1
+var msg = '<h2>Multiplication Table</h2>';                  // Message
 
 if (operator === 'addition') {
   // Do addition
