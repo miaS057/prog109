@@ -44,3 +44,30 @@ textarea{
 	text-align: left;
 	resize: none;
 }
+#encompass{
+  background: #8eb8fa;
+  min-width: 800x;
+  height:970px
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-left:30px;
+  margin-right:30px;
+  margin-bottom:30px;
+  padding:10px;
+  
+}
+#left, #right{
+  padding:10px;
+  background: #f4c2fc;
+  margin-bottom:20%;
+  float:left; 
+  
+}
+#right{
+  float:right;
+}
+.validateImg{
+  margin-bottom:1em;
+  height:200px;
+  width:500px;
+}
