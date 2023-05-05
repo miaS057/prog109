@@ -31,6 +31,7 @@ li {
 	padding: 0.5em 0;
 }
 #feature{
+	overflow: auto;
 	background-color: #A2D2EA;
 	height: 23em;
 	margin-top: 1em;
