@@ -23,10 +23,14 @@ body {
 	margin: 0px 0px 0px 0px;}
 
 h1 {
-  font-family: 'RubikOneRegular';
-  font-weight: normal;
-  font-style: normal;
-	text-align: center;
+	background-image: url('logo.png');
+	background-repeat: no-repeat;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 109px;
+	width: 643px;
+	margin: 40px auto;
 
 }
 
