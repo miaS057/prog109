@@ -38,8 +38,9 @@ function validateForm() {
   var zip = document.getElementById("Zip").value;
   
   //Validate first name  
-  if (firstname === "null" || firstname === "" || firstname.length > 20) {
+  if (firstname === "null" || firstname === "" || firstname.length > 20 || onlyLetters(firstname)) {
     errorMessage = "<p>The first name is required and cannot be greater than 20 characters</p>";
+    errorMessage += "<p>Only alphbetical characters are accepted<p>";
   } else {
     validFirstname = true;
     errorMessage = "";
@@ -49,8 +50,9 @@ function validateForm() {
 
 
   //Validate last name
-  if (lastname === "null" || lastname === "" || lastname.length > 20) {
+  if (lastname === "null" || lastname === "" || lastname.length > 20 || onlyLetters(firstname)) {
     errorMessage = "<p>The last name is required and cannot be greater than 20 characters</p>";
+    errorMessage += "<p>Only alphbetical characters are accepted<p>";
   } else {
     validLastname = true;
     errorMessage = "";
@@ -182,4 +184,17 @@ function validateForm() {
   
   
   return (validFirstname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZip);
+}
+
+function onlyLetters(inputString) 
+{
+  var letters = /^[A-Za-z]+$/;
+  if (inputString.value.match(letters)) 
+  {
+    return true;
+  } 
+  else 
+  {
+    return false;
+  }
 }
