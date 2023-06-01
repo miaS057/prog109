@@ -1,20 +1,24 @@
-
 var slideIndex = 1;
+var timer = null;
 showSlides(slideIndex);
 
-
 function prevSlide() {
+  clearTimeout(timer);
   slideIndex -= 1;
   showSlides(slideIndex);
 }
 
 function nextSlide() {
+  clearTimeout(timer);
   slideIndex += 1;
   showSlides(slideIndex);
 }
 
 function showSlides(n) {
   var slides = document.getElementsByClassName("slides");
+  if (n === undefined) {
+    n = ++slideIndex
+  }
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -26,6 +30,7 @@ function showSlides(n) {
   }
 
   slides[slideIndex - 1].style.display = "block";
+  timer = setTimeout(showSlides, 2000);
 }
 
 var prev = document.getElementById("prev");
