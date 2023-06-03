@@ -54,7 +54,6 @@ function validateForm() {
   if (lastname === "null" || lastname === "" || lastname.length > 20 || onlyLetters(firstname)) {
     errorMessage = "<p>The last name is required and cannot be greater than 20 characters</p>";
     errorMessage += "<p>Only alphbetical characters are accepted<p>";
-    return validLastname;
   } else {
     validLastname = true;
     errorMessage = "";
@@ -67,7 +66,7 @@ function validateForm() {
   if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length || email === "null" || email === "") 
   {
     errorMessage = "<p>Invalid email</p>";
-    return validEmail;
+   
   } 
   else 
   {
@@ -83,7 +82,7 @@ function validateForm() {
   if (isNaN(phone) || phone.length > 15 || phone === null || phone === "") 
   {
     errorMessage = "<p>Invalid phone number</p>";
-    return validPhone;
+   
   } 
   else 
   {
@@ -97,7 +96,7 @@ function validateForm() {
   //Validate username 
   if (username === "null" || username === "" || username.length > 12) {
     errorMessage = "<p>The username is required and cannot be greater than 12 characters</p>";
-    return validUsername;
+   
   } 
   else {
     validUsername = true;
@@ -111,7 +110,7 @@ function validateForm() {
   //Validate password 
   if (password === "null" || password === "" || password.length > 7) {
     errorMessage = "<p>The password is required and cannot be greater than 7 characters</p>";
-    return validPassword;
+    
   } else {
     validPassword = true;
     errorMessage = "";
@@ -123,7 +122,7 @@ function validateForm() {
   //Validate address 
   if (address === "null" || address === "") {
     errorMessage = "<p>The address is required</p>";
-    return validAddress;
+   
   } else {
     validAddress = true;
     errorMessage = "";
@@ -135,7 +134,7 @@ function validateForm() {
   //Validate city
   if (city === "null" || city === "") {
     errorMessage = "<p>The city is required</p>";
-    return validCity;
+   
   } else {
     validCity = true;
     errorMessage = "";
@@ -148,7 +147,7 @@ function validateForm() {
   if(state === "select")
   {
     errorMessage = "<p>The state is required</p>";
-    return validState;
+
   }
   else
   {
@@ -163,7 +162,7 @@ function validateForm() {
   if(country === "select")
   {
     errorMessage = "<p>The country is required</p>";
-    return validCountry;
+  
   }
   else
   {
@@ -182,7 +181,6 @@ function validateForm() {
     {
       errorMessage = "<p>Invalid zip code</p>";
     }
-    return validZip;
   }
   else
   {
@@ -194,7 +192,7 @@ function validateForm() {
 
   
   
-  return (true);
+  return {validFirstname, validLastname, validEmail, validPhone, validUsername, validPassword, validAddress, validCity, validState, validCountry, validZip};
 }
 
 function onlyLetters(inputString) 
