@@ -192,7 +192,7 @@ function validateForm() {
 
   
   
-  return {validFirstname, validLastname, validEmail, validPhone, validUsername, validPassword, validAddress, validCity, validState, validCountry, validZip};
+  return validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress && validCity && validState && validCountry && validZip;
 }
 
 function onlyLetters(inputString) 
