@@ -4,11 +4,9 @@ function validateForm() {
 
   var validFirstname = false;
   var firstname = document.getElementById("FirstName").value;
-  var notOnlyLettersFirstname = onlyLetters(firstname);
 
   var validLastname = false;
   var lastname = document.getElementById("LastName").value;
-  var notOnlyLettersLastname = onlyLetters(lastname);
 
   var validEmail = false;
   var email = document.getElementById("Email").value;
@@ -41,7 +39,7 @@ function validateForm() {
 
 
   //Validate first name  
-  if (firstname === "null" || firstname === "" || firstname.length > 20 || notOnlyLettersFirstname) {
+  if (firstname === "null" || firstname === "" || firstname.length > 20) {
     errorMessage = "<p>The first name is required and cannot be greater than 20 characters</p>";
     errorMessage += "<p>Only alphbetical characters are accepted<p>";
   } else {
@@ -53,7 +51,7 @@ function validateForm() {
 
 
   //Validate last name
-  if (lastname === "null" || lastname === "" || lastname.length > 20 || notOnlyLettersLastname) {
+  if (lastname === "null" || lastname === "" || lastname.length > 20) {
     errorMessage = "<p>The last name is required and cannot be greater than 20 characters</p>";
     errorMessage += "<p>Only alphbetical characters are accepted<p>";
   } else {
