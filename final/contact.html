@@ -27,21 +27,29 @@
 		<div id="feature">
 			<h2>Contact Me</h2>
       	<div id="form">
-					<form action="ty.html" onsubmit="return validateForm()">
-						<p> Name:
-            	<input type="text" name="name" size="15" maxlength="30">
-            </p>
-            <p> Email:
-              <input type="text" name="email" size="15" maxlength="30">
-            </p>
-           	<br>
-           	<p> Commments:</p>
-              <textarea name="comments" cols="20" rows="4">
-              </textarea>
-            <br>
-            <br>
-            <input type="submit" value="Submit" onclick="validateForm()">
-				</form>        
+					<form action="ty.html" id="myform" onsubmit="return validateForm();">
+					<p>
+						<label for='Name'>Name:</label>
+						<input type="text" id="Name" name="Name" />
+					</p>
+					<div id="nameErrorMsg" class="errorMsg"></div>
+
+
+					<p>
+						<label for='EMail'>EMail:</label>
+						<input type="text" id="Email" name="Email" />
+					</p>
+					<div id="emailErrorMsg" class="errorMsg"></div>
+
+					<p>
+						<label for='Comments'>Comments:</label>
+						<textarea cols="20" rows="5" id="Comments" name="Comments"></textarea>
+					</p>
+					<div id="commentErrorMsg" class="errorMsg"></div>
+
+					<input type="submit" onclick="validateForm()">
+
+				</form>       
 			</div>
 		</div>
 
