@@ -20,7 +20,7 @@ function validateForm() {
   if (name === "null" || name === "") {
     errorMessage = "<p>*Invalid name*<p>";
   } else {
-    validFirstname = true;
+    validName = true;
     errorMessage = "";
   }
   document.getElementById("nameErrorMsg").innerHTML = errorMessage;
