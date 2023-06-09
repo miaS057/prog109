@@ -1,3 +1,6 @@
+var d = new Date();
+document.getElementById("box").innerHTML = d;
+
 function validateForm() {
   //Create variables
   var errorMessage = "";
